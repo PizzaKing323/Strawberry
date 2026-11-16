@@ -5,50 +5,40 @@
   box-sizing: border-box;
 }
 
-/* 1. Main bar background color */
+/* Force explicit width and height */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #991b1b; /* Deep crimson red */
-  padding: 1rem 2rem;
+  width: 100%;             /* Stretches across the entire screen */
+  min-height: 70px;        /* Forces a visible 70px tall bar */
+  background-color: #991b1b; 
+  padding: 0 2rem;         /* Left and right inner spacing */
 }
 
-/* 2. Brand logo color */
 .logo {
-  color: #ffffff; /* Pure white */
+  color: #ffffff;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* 3. Horizontal layout for links */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
 }
 
-/* 4. Navigation link colors */
 .nav-links a {
-  color: #fee2e2; /* Soft warm white/pink tint */
+  color: #fee2e2;
   text-decoration: none;
-  font-size: 1rem;
-  padding: 0.5rem 0.75rem;
+  font-size: 1.1rem;       /* Slightly larger link text */
+  padding: 0.6rem 1rem;
   border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* 5. Hover effect */
 .nav-links a:hover {
-  background-color: #dc2626; /* Bright red highlight */
+  background-color: #dc2626;
   color: #ffffff;
-}
-
-/* 6. Active page highlight */
-.nav-links a[aria-current="page"] {
-  background-color: #7f1d1d; /* Darker red shade */
-  color: #ffffff;
-  font-weight: bold;
 }
 
